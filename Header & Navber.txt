@@ -1,0 +1,97 @@
+navber
+
+
+html
+
+
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<header>
+    <div class="logo">Bissas</div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Servises</a>
+            <ul>
+                <li>Graphics</li>
+                <li>Web design</li>
+                <li>Digital Marketing</li>
+            </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </div>
+</header>
+</body>
+</html>
+
+
+
+css
+
+
+body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+header{
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+  display: flex;
+}
+.logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #ddd;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul{
+  list-style: none;
+}
+.navbar ul li{
+  background-color: blueviolet;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.navbar ul li:hover{
+  background-color: crimson;
+}
+.navbar ul ul{
+  display: none;
+}
+.navbar ul li:hover>ul{
+  display: block;
+}

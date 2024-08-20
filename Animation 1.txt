@@ -1,0 +1,73 @@
+animation ---- square
+
+
+
+html-
+
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<div class="box"></div>
+</body>
+</html>
+
+
+
+css-
+
+
+.box{
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  margin: 100px auto;
+  position: relative;
+  /*animation-name: square;
+  animation-duration: 4s;
+  animation-play-state: running;
+  animation-timing-function: 2s;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  */
+  animation: square 4s linear 1s alternate backwards running;
+}
+@keyframes square{
+  0%{
+    background-color: blueviolet;
+    left: 0px;
+    right: 0px;
+    transform: rotate(360deg);
+  }
+  25%{
+    background-color: blue;
+    left: 500px;
+    right: 0px;
+    border-radius: 50%;
+  }
+  50%{
+    background-color: peru;
+    left: 500px;
+    right: 500px;
+    border-radius: 50%;
+  }
+  75%
+  {
+    background-color: yellow;
+    left: 0px;
+    right: 500px;
+    border-radius: 50%;
+  }
+  100%{
+    background-color: green;
+    left: 500px;
+    right: 500px;
+    border-radius: 0px;
+  }
+}

@@ -1,0 +1,63 @@
+Grid 
+
+
+html
+
+
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<main>
+    <div class="div1">header</div class="div">
+    <div class="div2">box1</div class="div">
+    <div class="div3">box2</div class="div">
+    <div class="div4">box3</div class="div">
+    <div class="div5">side bar</div class="div">
+    <div class="div6">main contact</div class="div">
+    <div class="div7">footer</div class="div">
+</main>
+</body>
+</html>
+
+
+
+
+
+css
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+main{
+  width: 75%;
+  margin: 10px auto;
+  border: 1px solid green;
+  display: grid;
+  grid-template-rows: 80px 100px 200px 80px;
+  grid-template-columns: repeat(3, 1fr) 150px;
+  grid-gap: 10px;
+}
+.div1{background-color: chocolate;
+grid-column: 1/-1;}
+.div2{background-color: aqua;}
+.div3{background-color: blueviolet;}
+.div4{background-color: brown;}
+.div5{background-color: rgb(134, 77, 7);
+grid-row: 2/4; grid-column: 4/5;}
+.div6{background-color: gray;
+grid-column: 1/4;}
+.div7{background-color: gold;
+grid-column: 1/-1;}
